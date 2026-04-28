@@ -39,9 +39,7 @@ let akanName;
         akanName = maleNames[weekDay];
       } else if (gender === "female") {
         akanName = femaleNames[weekDay];
-      } else {
-        akanName = "Invalid gender";
-      }
+      } 
 
   document.getElementById("result").innerText =
     akanName;
