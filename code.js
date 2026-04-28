@@ -19,6 +19,19 @@ function generateName() {
     return;
   }
 
+  if ((month=== 1) && (day>29)) {
+    document.getElementById("result").innerText = "invalid date. Try again"
+    return;
+  }
+
+  
+let leapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+
+if (month === 1 && !leapYear && day > 28) {
+  document.getElementById("result").innerText = "Invalid date. Try again";
+  return;
+}
+
   if ((year > 2026 || year < 0) && (day > 31 || day < 0)) {
     document.getElementById("result").innerText =
       "invalid birthdate. Try again";
