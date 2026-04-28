@@ -140,17 +140,20 @@ body{
   padding: 5px;
   border: 2px solid black;
   border-radius: 8px;
+  margin-top: 1px;
 }
 
 
 .akan-btn {
-  background-color: purple;  
+  background-color: rgb(0, 71, 0);  
   color: white;               
-  width: 220px;               /* width */
-  height: 50px;               /* height */
-  border: none;               /* removes border */
-  border-radius: 12px;        /* rounded corners */
-  font-size: 16px;            /* text size */
-  font-weight: bold;          /* bold text */
-  cursor: pointer;            
+  width: 500px;               
+  height: 50px;              
+  border: none;               
+  border-radius: 7px;        
+  font-size: 16px;            
+  font-weight: bold;          
+  cursor: pointer;
+  margin-top: 8px;            
 }
+
