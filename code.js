@@ -39,5 +39,5 @@ function generateName() {
       : femaleNames[weekDay];
 
   document.getElementById("result").innerText =
-    "Your Akan Name is " + akanName;
+    akanName;
 }
