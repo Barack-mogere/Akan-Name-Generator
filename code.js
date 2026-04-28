@@ -33,10 +33,15 @@ function generateName() {
     "Akua", "Yaa", "Afua", "Ama"
   ];
 
-  let akanName =
-    gender === "male"
-      ? maleNames[weekDay]
-      : femaleNames[weekDay];
+let akanName;
+
+      if (gender === "male") {
+        akanName = maleNames[weekDay];
+      } else if (gender === "female") {
+        akanName = femaleNames[weekDay];
+      } else {
+        akanName = "Invalid gender";
+      }
 
   document.getElementById("result").innerText =
     akanName;
