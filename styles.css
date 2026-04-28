@@ -37,6 +37,7 @@ body{
 
 .aboutsection h1 {
     justify-self: center;
+    font-style: italic;
 }
 
 .aboutsection p {
@@ -115,4 +116,41 @@ body{
     margin-left: auto;
     color: antiquewhite;
     margin-right: 20px;
+}
+
+.box1 input{
+    width: 100px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.inputboxes {
+    justify-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.box1 select {
+  width: 500px;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+
+.akan-btn {
+  background-color: purple;  
+  color: white;               
+  width: 220px;               /* width */
+  height: 50px;               /* height */
+  border: none;               /* removes border */
+  border-radius: 12px;        /* rounded corners */
+  font-size: 16px;            /* text size */
+  font-weight: bold;          /* bold text */
+  cursor: pointer;            
 }
