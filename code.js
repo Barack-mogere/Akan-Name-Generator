@@ -1,4 +1,3 @@
-
 function generateName() {
   let day = parseInt(document.getElementById("day").value);
   let month = parseInt(document.getElementById("month").value);
@@ -6,23 +5,30 @@ function generateName() {
   let gender = document.getElementById("gender").value;
 
   if (!day || !month || !year || gender === "") {
-    document.getElementById("result").innerText =
-      "Please fill all fields";
+    document.getElementById("result").innerText = "Please fill all fields";
     return;
   }
 
-  if(day>31 || day<0) {
-    document.getElementById("result").innerText =
-    "invalid date. Try again"
+  if (day > 31 || day < 0) {
+    document.getElementById("result").innerText = "invalid date. Try again";
     return;
+  }
+
+  if (year > 2026 || year < 0) {
+    document.getElementById("result").innerText = "invalid year. Try again";
+    return;
+  }
+
+  if ((year > 2026 || year < 0) && (day > 31 || day < 0)) {
+    document.getElementById("result").innerText =
+      "invalid birthdate. Try again";
   }
 
   let CC = Math.floor(year / 100);
   let YY = year % 100;
 
   let weekDay = Math.floor(
-    ((CC / 4) - 2 * CC - 1 + (5 * YY / 4) + (26 * (month + 1) / 10) + day
-    ) % 7
+    (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (month + 1)) / 10 + day) % 7,
   );
 
   if (weekDay < 0) {
@@ -30,23 +36,24 @@ function generateName() {
   }
 
   let maleNames = [
-    "Kwasi", "Kwadwo", "Kwabena",
-    "Kwaku", "Yaw", "Kofi", "Kwame"
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "Kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame",
   ];
 
-  let femaleNames = [
-    "Akosua", "Adwoa", "Abenaa",
-    "Akua", "Yaa", "Afua", "Ama"
-  ];
+  let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-let akanName;
+  let akanName;
 
-      if (gender === "male") {
-        akanName = maleNames[weekDay];
-      } else if (gender === "female") {
-        akanName = femaleNames[weekDay];
-      } 
+  if (gender === "male") {
+    akanName = maleNames[weekDay];
+  } else if (gender === "female") {
+    akanName = femaleNames[weekDay];
+  }
 
-  document.getElementById("result").innerText =
-    akanName;
+  document.getElementById("result").innerText = akanName;
 }
