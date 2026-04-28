@@ -41,3 +41,14 @@ Wednesday → Akua
 Thursday → Yaa
 Friday → Afua
 Saturday → Ama
+
+##WHAT I LEARNED-
+ while building the project i learned how to tie together many javascripts processes inorder to come up with one function
+
+ ##FUTURE IMPROVEMENTS-
+ Improve UI design for better user experience
+Add animations for result display
+Make it mobile-friendly
+
+##AUTHOR-
+This project was done by Barack Mogere and it was created as a learning project to practice JavaScript and understand basic web development concepts.
