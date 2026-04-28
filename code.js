@@ -11,6 +11,12 @@ function generateName() {
     return;
   }
 
+  if(day>31 || day<0) {
+    document.getElementById("result").innerText =
+    "invalid date. Try again"
+    return;
+  }
+
   let CC = Math.floor(year / 100);
   let YY = year % 100;
 
