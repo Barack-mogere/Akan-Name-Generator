@@ -40,8 +40,25 @@
              </h3>
              <section class="inputboxes">
                 <input type="text" placeholder="Name">
-                <input type="number" placeholder="MM">
-                <input type="number" placeholder="YYYY">
+                <input type="number" id="day" min="1" max="31" placeholder="Day">
+                  <select id="month">
+                          <option value="">Select Month</option>
+                          <option value="0">January</option>
+                          <option value="1">February</option>
+                          <option value="2">March</option>
+                          <option value="3">April</option>
+                          <option value="4">May</option>
+                          <option value="5">June</option>
+                          <option value="6">July</option>
+                          <option value="7">August</option>
+                          <option value="8">September</option>
+                          <option value="9">October</option>
+                          <option value="10">November</option>
+                          <option value="11">December</option>
+                   </select>
+
+
+          <input type="number" placeholder="YYYY">
              </section>
               <h4>
                 Gender
@@ -54,14 +71,15 @@
                   <option value="female">Female</option>
                    <option value="other">Other</option>
               </select>
-              <button class="akan-btn">Generate Akan Name</button>
+              <button onclick="generateName()" class="akan-btn">Generate Akan Name</button>
 
               </section>
         </section>
    
        <section class="box2">
              <h3>
-                Your Akan Name is:
+                Your <span class="akan">Akan</span> Name is:
+                <p id="result"></p>
              </h3>
 
         </section>
@@ -111,6 +129,6 @@
 
 
 
-    
+    <script src="code.js" defer></script>
 </body>
 </html>
