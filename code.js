@@ -24,7 +24,7 @@ function generateName() {
     return;
   }
 
-  
+
 let leapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 
 if (month === 1 && !leapYear && day > 28) {

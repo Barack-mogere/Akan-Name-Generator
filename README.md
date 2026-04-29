@@ -51,4 +51,4 @@ Add animations for result display
 Make it mobile-friendly
 
 ##AUTHOR-
-This project was done by Barack Mogere and it was created as a learning project to practice JavaScript and understand basic web development concepts.
+This project was done by Barack Mogere© and it was created as a learning project to practice JavaScript and understand basic web development concepts.
